@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encoder/Decoder</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="encoder-decoder">
+        <div class="encode-decode">
+            <div>
+                <input type="text" id="input" placeholder="Enter your text here" required>
+                <div>
+                    <button onclick="encodeMessage()">Encode</button>
+                </div>
+                <div>
+                    <button onclick="decodeMessage()">Decode</button>
+                </div>
+            </div>
+        </div>
+        <div class="encoded-decoded">
+            <textarea name="" id="output" cols="30" rows="10" disabled></textarea>
+            <button onclick="copyToClipboard()" class="copy">Copy</button>
+        </div>
+    </main>
+
+    <footer>
+        <section class="">
+            <p>By Isra</p>
+        </section>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
